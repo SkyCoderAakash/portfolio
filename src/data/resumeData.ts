@@ -25,6 +25,8 @@ export interface ResumeData {
     location: string;
     phone: string;
     email: string;
+    github: string;
+    linkedid: string;
   };
   skills: {
     frontend: string[];
@@ -45,6 +47,8 @@ const resumeData: ResumeData = {
     location: "Ghaziabad, Uttar Pradesh",
     phone: "9310574997",
     email: "aakashprajapati3003@gmail.com",
+    github: "https://github.com/skyCoderAakash",
+    linkedid:"https://www.linkedin.com/in/aakashprajapati1001"
   },
   skills: {
     frontend: [
@@ -84,8 +88,8 @@ const resumeData: ResumeData = {
     "A passionate Frontend Web Developer with a strong foundation in modern JavaScript frameworks like React and Next.js. Experienced in crafting responsive, user-centric web applications with optimized performance and clean UI/UX. Skilled in collaborating with designers and backend teams to deliver robust, scalable solutions. Also experienced in full-stack development for building complete web applications.",
   education: [
     {
-      degree: "Diploma in Full Stack Web Development",
-      institution: "Technicla Academy",
+      degree: "Diploma in web development",
+      institution: "Techstack Academy",
       period: "2022 - 2023",
     },
     {
@@ -94,14 +98,14 @@ const resumeData: ResumeData = {
       period: "2018 - 2021",
     },
     {
-      degree: "Higher Secondary",
+      degree: "Secondary School",
       institution: "D.P. Modern Public School",
       period: "2017 - 2018",
     },
   ],
   experience: [
     {
-      position: "Frontend Web Developer (React.js)",
+      position: "Frontend developer",
       company: "Codebrain Info Tech",
       location: "Surat",
       period: "June 2024 - Present",
@@ -114,7 +118,7 @@ const resumeData: ResumeData = {
       ],
     },
     {
-      position: "Frontend Developer",
+      position: "Fullstack Developer",
       company: "Orangus India Pvt. Ltd.",
       location: "New Delhi",
       period: "Aug 2023 - April 2024",
@@ -127,7 +131,7 @@ const resumeData: ResumeData = {
   ],
   projects: [
     {
-      name: "ERP System with POS Integration",
+      name: "ERP system with POS integrated",
       description:
         "A retail management system designed to handle daily store operations, sales, and inventory through an integrated POS setup.",
       details: [
@@ -151,7 +155,7 @@ const resumeData: ResumeData = {
       ],
     },
     {
-      name: "Gaming and Sports Betting Platform",
+      name: "Gaming and Sports betting platform",
       description:
         "An online platform offering casino games and sports betting features with cryptocurrency integration.",
       details: [

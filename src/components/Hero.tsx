@@ -21,12 +21,11 @@ const Hero = () => {
 
   return (
     <section id="home" className="pt-20 px-4 max-w-6xl mx-auto">
-      {/* Comment code */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="mb-12"
+        className="mb-6 lg:mb-12"
       >
         <span className="text-green-400 text-2xl">
           // Frontend Web Developer
@@ -37,15 +36,14 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="mb-12"
+        className="mb-6 md:mb-12 text-base"
       >
-        <div className="text-blue-400">const</div>
-        <div className="ml-4">
-          <span className="text-blue-400">developer</span>
+        <div className="ml-2 sm:ml-4">
+          <span className="text-blue-400">const developer</span>
           <span className="text-white"> = </span>
           <span className="text-yellow-300">&#123;</span>
         </div>
-        <div className="ml-8">
+        <div className="ml-4 sm:ml-8">
           <span className="text-blue-400">name:</span>
           <span className="text-green-300">
             {" "}
@@ -53,21 +51,21 @@ const Hero = () => {
           </span>
           <span className="text-yellow-300">,</span>
         </div>
-        <div className="ml-8">
+        <div className="ml-4 sm:ml-8">
           <span className="text-blue-400">role:</span>
           <span className="text-green-300">
             {" "}
             &#39;{resumeData.personalInfo.title}&#39;
           </span>
         </div>
-        <div className="ml-4 text-yellow-300">&#125;</div>
+        <div className="ml-2 sm:ml-4 text-yellow-300">&#125;</div>
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="mb-12"
+        className="mb-6 md:mb-12 text-base"
       >
         <div>
           <span className="text-purple-400">function</span>
@@ -75,7 +73,7 @@ const Hero = () => {
           <span className="text-white">() </span>
           <span className="text-yellow-300">&#123;</span>
         </div>
-        <div className="ml-4">
+        <div className="ml-2 sm:ml-4">
           <span className="text-purple-400">return</span>
           <span className="text-green-300">
             {" "}
@@ -91,9 +89,9 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
-        className="mb-12 border-l-4 border-gray-700 pl-4 text-gray-300"
+        className="mb-6 md:mb-12 pl-2 sm:pl-4 text-gray-300 text-base"
       >
-        <div className="mb-2 ">/* About me */</div>
+        <div className="mb-2 text-lg sm:text-xl text-white">/* About me */</div>
         <div>
           {typedText}
           <span className="animate-pulse">|</span>
@@ -104,17 +102,17 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.2 }}
-        className="flex gap-4"
+        className="flex flex-col sm:flex-row gap-3 sm:gap-4"
       >
         <a
           href="#experience"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center"
+          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center justify-center text-sm sm:text-base"
         >
           [] View Experience
         </a>
         <a
           href="#contact"
-          className="border border-gray-700 hover:border-gray-500 px-4 py-2 rounded flex items-center"
+          className="border border-gray-700 hover:border-gray-500 px-4 py-2 rounded flex items-center justify-center text-sm sm:text-base"
         >
           # Contact Me <ArrowRight className="ml-2 h-4 w-4" />
         </a>

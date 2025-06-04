@@ -31,7 +31,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all ${
         isScrolled
-          ? "bg-gray-900/90 backdrop-blur-sm shadow-md py-2"
+          ? "bg-gray-900/90 backdrop-blur-sm shadow-md py-3"
           : "bg-transparent py-4"
       }`}
     >
@@ -44,8 +44,7 @@ const Header = () => {
           <span>Aakash.dev</span>
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8">
           {navItems.map((item) => (
             <motion.a
               key={item.name}
@@ -58,8 +57,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button and Theme Switcher */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="lg:hidden flex items-center gap-4">
           <button
             className="text-gray-300 focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -73,14 +71,13 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden bg-gray-900 dark:bg-gray-900 shadow-lg"
+          className="lg:hidden bg-gray-900 dark:bg-gray-900 shadow-lg"
         >
           <div className="px-4 py-2 space-y-1">
             {navItems.map((item) => (

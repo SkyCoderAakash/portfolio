@@ -4,9 +4,9 @@ import { Terminal } from "lucide-react";
 
 const Education = () => {
   return (
-    <section id="education" className="py-10 px-4 max-w-6xl mx-auto">
+    <section id="education" className="pt-12 sm:pt-20 px-4 max-w-6xl mx-auto">
       <motion.div
-        className="mb-12"
+        className="mb-6 lg:mb-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -24,7 +24,7 @@ const Education = () => {
       >
         <div className="bg-gray-800 px-4 py-2 flex items-center">
           <Terminal className="h-4 w-4 mr-2 text-gray-400" />
-          <span className="text-gray-200">education.sh</span>
+          <span className="text-gray-200 text-lg">education.sh</span>
           <div className="ml-auto flex space-x-2">
             <div className="h-3 w-3 rounded-full bg-red-500"></div>
             <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -32,13 +32,13 @@ const Education = () => {
           </div>
         </div>
 
-        <div className="p-6 text-gray-300 font-mono text-sm">
+        <div className="p-4 sm:p-6 text-gray-300 font-mono text-sm">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.3 }}
-            className="mb-4"
+            className="mb-4 text-lg"
           >
             <span className="text-green-400">$</span> ls -la education/
           </motion.div>
@@ -56,9 +56,9 @@ const Education = () => {
                 <span className="text-yellow-300 text-lg font-semibold">
                   {edu.degree}
                 </span>
-                <span className="text-gray-500">{edu.period}</span>
+                <span className="text-gray-500 text-base">{edu.period}</span>
               </div>
-              <div className="text-blue-400">{edu.institution}</div>
+              <div className="text-blue-400 text-base">{edu.institution}</div>
             </motion.div>
           ))}
 
@@ -67,6 +67,7 @@ const Education = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.8 }}
+            className="text-base"
           >
             <span className="text-green-400">$</span>{" "}
             <span className="animate-pulse">_</span>
