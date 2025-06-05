@@ -38,12 +38,12 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
         className="mb-6 md:mb-12 text-base"
       >
-        <div className="ml-2 sm:ml-4">
+        <div className="">
           <span className="text-blue-400">const developer</span>
           <span className="text-white"> = </span>
           <span className="text-yellow-300">&#123;</span>
         </div>
-        <div className="ml-4 sm:ml-8">
+        <div className="ml-2 sm:ml-4">
           <span className="text-blue-400">name:</span>
           <span className="text-green-300">
             {" "}
@@ -51,14 +51,14 @@ const Hero = () => {
           </span>
           <span className="text-yellow-300">,</span>
         </div>
-        <div className="ml-4 sm:ml-8">
+        <div className="ml-2 sm:ml-4">
           <span className="text-blue-400">role:</span>
           <span className="text-green-300">
             {" "}
             &#39;{resumeData.personalInfo.title}&#39;
           </span>
         </div>
-        <div className="ml-2 sm:ml-4 text-yellow-300">&#125;</div>
+        <div className="text-yellow-300">&#125;</div>
       </motion.div>
 
       <motion.div
@@ -89,7 +89,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
-        className="mb-6 md:mb-12 pl-2 sm:pl-4 text-gray-300 text-base"
+        className="mb-6 md:mb-12 text-gray-300 text-base"
       >
         <div className="mb-2 text-lg sm:text-xl text-white">/* About me */</div>
         <div>

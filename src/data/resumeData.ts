@@ -48,7 +48,7 @@ const resumeData: ResumeData = {
     phone: "9310574997",
     email: "aakashprajapati3003@gmail.com",
     github: "https://github.com/skyCoderAakash",
-    linkedid:"https://www.linkedin.com/in/aakashprajapati1001"
+    linkedid: "https://www.linkedin.com/in/aakashprajapati1001",
   },
   skills: {
     frontend: [
@@ -61,11 +61,10 @@ const resumeData: ResumeData = {
       "Next.js",
       "Redux",
       "TypeScript",
-      "Responsive Design",
       "REST API Integration",
       "React Query",
-      "Framer Motion",
       "React Router",
+      "Storybook",
     ],
     backend: [
       "Node.js",
@@ -74,15 +73,8 @@ const resumeData: ResumeData = {
       "JWT Authentication",
       "Multer for file uploads",
     ],
-    database: ["MongoDB", "SQL", "Mongoose"],
-    other: [
-      "Git & GitHub",
-      "Vercel",
-      "Postman",
-      "Figma (for UI handoff)",
-      "VS Code",
-      "Agile Methodology",
-    ],
+    database: ["MongoDB", "SQL", "Mongoose", "Prisma"],
+    other: ["Git & GitHub", "Vercel", "Postman", "Figma", "VS Code"],
   },
   objective:
     "A passionate Frontend Web Developer with a strong foundation in modern JavaScript frameworks like React and Next.js. Experienced in crafting responsive, user-centric web applications with optimized performance and clean UI/UX. Skilled in collaborating with designers and backend teams to deliver robust, scalable solutions. Also experienced in full-stack development for building complete web applications.",
